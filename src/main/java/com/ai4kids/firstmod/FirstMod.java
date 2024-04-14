@@ -1,5 +1,6 @@
 package com.ai4kids.firstmod;
 
+import com.ai4kids.firstmod.block.ModBlocks;
 import com.ai4kids.firstmod.item.ModCreativeModTabs;
 import com.ai4kids.firstmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -23,8 +24,9 @@ public class FirstMod {
     public FirstMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        // to register the deferred register
+        // to register items deferred register and blocks deferred register
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // to register the creative mod tabs
         ModCreativeModTabs.register(modEventBus);
         // Register the commonSetup method for modloading

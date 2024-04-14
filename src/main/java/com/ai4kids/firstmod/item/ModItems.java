@@ -7,16 +7,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-/**
- *
- */
 public class ModItems {
     // Registers Mod Objects
     // Deferred Register delays item registration, until all necessary data has been loaded
     // Prevents conflicts
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FirstMod.MOD_ID);
-
 
     // add sapphire - no texture, no name
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
